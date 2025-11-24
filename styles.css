@@ -1,0 +1,185 @@
+:root {
+    --text-color: #28536bff;
+    --pop: #7ea8beff;
+    --background: #f6f0edff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 10px;
+}
+
+li {
+    margin: 0 0 5px 10px;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+    position: relative;
+    margin-bottom: 50px;
+}
+
+header {
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.banner {
+    height: 300px;
+    width: 100%;
+    background: no-repeat center/100% url('./banner_image.jpg');
+}
+
+.logo {
+    font-family: "Lobster", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0;
+}
+
+.contact-cta {
+    background-color: var(--text-color);
+    color: var(--background);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    margin: auto 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.sub-logo {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+}
+
+.business-info {
+    text-align: center;
+}
+
+.business-details {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.sub-text {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px 5px;
+}
+
+.service {
+    width: 275px;
+}
+
+.instrument {
+    font-weight: bold;
+    size: 18px;
+}
+
+.service-list {
+    padding: 0 0 0 15px;
+}
+
+.portrait img {
+    max-width: 100%;
+}
+
+.portrait {
+    width: 40%;
+}
+
+.bio {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin: 24px 0;
+    padding: 0 12px;
+}
+
+.floating-button {
+    align-items: center;
+    background-color: var(--text-color);
+    border-radius: 10px;
+    border: none;
+    bottom: 20px;
+    color: var(--background);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    position: fixed;
+    right: 20px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width : 480px) {
+    .services {
+        grid-template-columns: auto;
+        gap: revert;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-container {
+        margin-bottom: 16px;
+    }
+
+    .logo {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width : 760px) {
+    .services {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width : 760px) {
+    .portrait {
+        width: 100%;
+    }
+
+    .bio {
+        width: 100%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .business-details {
+        margin-top: 20px;
+    }
+}
