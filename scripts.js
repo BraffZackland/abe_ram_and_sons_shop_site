@@ -20,9 +20,9 @@ const helper = (arr) => arr.reduce((acc, item) => {
     return acc
 }, '')
 
-repairBio.textContent = "Studied under Rod Siljenberg and graduated with honors from the western iowa tech band instrument repair program in Souix City, Iowa where he also interned at Midbell music. For the next ten years he lived in Maryland as the clarinet and double reed repair specialist for the largest single store musical instrument retailer Chuck Levin\'s Washington Music Center. At Chuck\'s he routinely worked on instruments used by all of the military bands in the area including The President\'s Own Marine Band."
+repairBio.textContent = "Chris studied under Rod Siljenberg and graduated with honors from the Western Iowa Tech band instrument repair program in Souix City, Iowa. He also received the honor of being chosen as the first ever repair student to intern with the local repair shop at Midbell music. For the next ten years he lived in Maryland as the clarinet and double reed repair specialist for the largest single store musical instrument retailer Chuck Levin\'s Washington Music Center. At Chuck\'s he routinely worked on instruments used by all of the military bands in the area including The President\'s Own Marine Band."
 
-musicBio.textContent = "He attended The Florida State University and studied classical saxophone with Pat Meighan, and Jon Bergeron (now at Northern Arizona University). He then joined the navy as a woodwind instrumentalist (clarinet and saxophone) where he was stationed in Naples, Italy with the 6th fleet band (now the Naval Forces Europe band), and while in Naples he also had the honor of occasionally playing with the NATO band. After a brief hiatus from instrumental music and a move to Brooklyn, now Chris is overjoyed to play with/have played with several local New York community ensembles such as the Brooklyn Symphony Orchestra, Brooklyn Wind Symphony, Jackson Heights Orchestra, and the Press Start Orchestra (just to name a few!)"
+musicBio.textContent = "Chris attended The Florida State University and studied classical saxophone with Pat Meighan, and Jon Bergeron (now at Northern Arizona University). He then joined the navy as a woodwind instrumentalist (clarinet and saxophone) where he was stationed in Naples, Italy with the 6th fleet band (now the Naval Forces Europe band), and while in Naples he also had the honor of occasionally playing with the NATO band. After a brief hiatus from instrumental music and a move to Brooklyn, now Chris is overjoyed to play with/have played with several local New York community ensembles such as the Brooklyn Symphony Orchestra, Brooklyn Wind Symphony, Jackson Heights Orchestra, Manhattan Wind Ensemble, and the Press Start Orchestra (just to name a few!)"
 
 tagLine.innerHTML = 'The rehearsal time, <i>anti</i>-squeezing, <i>anti</i>-squeaking, <i>anti</i>-stand-partner-side-eye so you can play your best repair service.'
 
@@ -61,6 +61,7 @@ const otherServices = [
     'UltraSonic cleaning: Any woodwind mouthpiece',
     'UltraSonic cleaning: Any brass mouthpiece',
     'Case cleaning and repair',
+    'Reach out and ask!'
 ]
 const threeDServices = [
     'Coming soon...'
