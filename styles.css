@@ -34,7 +34,7 @@ header {
 .banner {
     height: 300px;
     width: 100%;
-    background: no-repeat center/100% url('./banner_image.jpg');
+    background: no-repeat center/100% url('./assets/banner_image.jpg');
 }
 
 .logo {
@@ -68,6 +68,11 @@ header {
     font-size: 24px;
     font-weight: bold;
     margin: 40px 0 20px 0;
+}
+
+.inst-service {
+    /* border: none; */
+    /* background: none; */
 }
 
 .business-info {
@@ -144,6 +149,13 @@ header {
     position: fixed;
     right: 20px;
     text-decoration: none;
+}
+
+.with-desc {
+    border-bottom: dashed;
+    cursor: pointer;
+    display: inline;
+    margin: 0;
 }
 
 @media only screen and (max-width : 480px) {
