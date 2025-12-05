@@ -1,20 +1,21 @@
 import { handleDescription, handleList, handleVariation, parseRaw } from "./utils.js"
+import { disassembled, reassembled, all_pads_replaced, some_pads_replaced, case_cleaned, keywork_oiled, step_ups_available, bore_oiled, inspected, cleaned, bocal_ultrasonic, boot_gasket, ultrasonic, oil_and_adjust, clean_and_adjust, repad } from "./copy_data.js"
 
 // REPAD
 const OBOE_REPAD_TITLE_COPY = 'Oboe Repad'
-const OBOE_REPAD_DESC_COPY = 'Full service, good for a oboe found in attics/basements, hand-me-downs that need new life, moving to a new type of pad, or fixing water/mold damage.'
+const OBOE_REPAD_DESC_COPY = repad
 const OBOE_REPAD_VARIATION_COPY = 'Custom pads'
 const OBOE_REPAD_OPS_COPY = [
-    'Disassembled',
-    'Ultrasonically cleaned (unless you opt out/plastic only)',
-    'Bore oiled (wood only)',
-    'All pads replaced',
-    'Reassembled',
-    'Key work oiled and adjusted',
-    'case cleaned'
+    disassembled,
+    ultrasonic,
+    bore_oiled,
+    all_pads_replaced,
+    reassembled,
+    keywork_oiled,
+    case_cleaned
 ]
 const OBOE_REPAD_VAROPS_COPY = [
-    'Several step up and professional pad options available',
+    step_ups_available,
 ]
 const oboeRepadDescriptionRaw = {
     title: OBOE_REPAD_TITLE_COPY,
@@ -26,15 +27,15 @@ const oboeRepadDescriptionRaw = {
 
 // Clean and adjust
 const OBOE_CA_TITLE_COPY = 'Oboe Clean and Full Adjust'
-const OBOE_CA_DESC_COPY = 'Full service with only needed pads replaced. Good for grimy and gunky instruments!'
+const OBOE_CA_DESC_COPY = clean_and_adjust
 const OBOE_CA_VARIATION_COPY = 'Ultrasonic clean and adjust'
 const OBOE_CA_OPS_COPY = [
-    'Disassembled',
-    'Cleaned',
-    'Bore oiled (wood only)',
-    'Pads replaced as needed',
-    'Reassembled',
-    'Key work oiled and adjusted',
+    disassembled,
+    cleaned,
+    bore_oiled,
+    some_pads_replaced,
+    reassembled,
+    keywork_oiled,
 ]
 const OBOE_CA_VAROPS_COPY = [
     'Oboe (plastic only) and keys are ultrasonically cleaned'
@@ -49,13 +50,13 @@ const oboeCleanAndAdjustDescriptionRaw = {
 
 // Oil and adjust
 const OBOE_OA_TITLE_COPY = 'Oboe Oil and Full Adjust'
-const OBOE_OA_DESC_COPY = 'A more detailed full adjustment where extra attention is given to the keywork.'
+const OBOE_OA_DESC_COPY = oil_and_adjust
 const OBOE_OA_OPS_COPY = [
-    'Disassembled',
-    'Bore oiled (wood only)',
-    'Pads replaced as needed',
-    'Reassembled',
-    'Key work oiled and adjusted',
+    disassembled,
+    bore_oiled,
+    some_pads_replaced,
+    reassembled,
+    keywork_oiled,
 ]
 const oboeOilAndAdjustDescriptionRaw = {
     title: OBOE_OA_TITLE_COPY,
@@ -68,13 +69,13 @@ const OBOE_FA_TITLE_COPY = 'Oboe Full Adjustment/Play Condition'
 const OBOE_FA_DESC_COPY = 'Your basic yearly oboe \'tune-up\', get this done regularly to ensure your oboe is playing its best!'
 const OBOE_FA_VARIATION_COPY = 'Minor adjustment'
 const OBOE_FA_OPS_COPY = [
-    'inspected',
-    'Pads replaced as needed',
-    'Key work oiled and adjusted',
+    inspected,
+    some_pads_replaced,
+    keywork_oiled,
 ]
 const OBOE_FA_VAROPS_COPY = [
-    'inspected',
-    'Key work oiled and adjusted',
+    inspected,
+    keywork_oiled,
 ]
 const oboeFullAdjustDescriptionRaw = {
     title: OBOE_FA_TITLE_COPY,

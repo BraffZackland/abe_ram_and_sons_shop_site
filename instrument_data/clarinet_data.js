@@ -1,20 +1,21 @@
 import { handleDescription, handleList, handleVariation, parseRaw } from "./utils.js"
+import { disassembled, reassembled, all_pads_replaced, some_pads_replaced, case_cleaned, keywork_oiled, step_ups_available, bore_oiled, inspected, cleaned, bocal_ultrasonic, boot_gasket, ultrasonic, oil_and_adjust, clean_and_adjust, repad } from "./copy_data.js"
 
 // REPAD
 const CLARINET_REPAD_TITLE_COPY = 'Clarinet Repad'
-const CLARINET_REPAD_DESC_COPY = 'Full service, good for a clarinet found in attics/basements, hand-me-downs that need new life, moving to a new type of pad, or fixing water/mold damage.'
+const CLARINET_REPAD_DESC_COPY = repad
 const CLARINET_REPAD_VARIATION_COPY = 'Custom pads'
 const CLARINET_REPAD_OPS_COPY = [
-    'Disassembled',
-    'Ultrasonically cleaned (unless you opt out/plastic only)',
-    'Bore oiled (wood only)',
-    'All pads replaced',
-    'Reassembled',
-    'Key work oiled and adjusted',
-    'case cleaned'
+    disassembled,
+    ultrasonic,
+    bore_oiled,
+    all_pads_replaced,
+    reassembled,
+    keywork_oiled,
+    case_cleaned
 ]
 const CLARINET_REPAD_VAROPS_COPY = [
-    'Several step up and professional pad options available',
+    step_ups_available,
 ]
 const clarinetRepadDescriptionRaw = {
     title: CLARINET_REPAD_TITLE_COPY,
@@ -26,15 +27,15 @@ const clarinetRepadDescriptionRaw = {
 
 // Clean and adjust
 const CLARINET_CA_TITLE_COPY = 'Clarinet Clean and Full Adjust'
-const CLARINET_CA_DESC_COPY = 'Full service with only needed pads replaced. Good for grimy and gunky instruments!'
+const CLARINET_CA_DESC_COPY = clean_and_adjust
 const CLARINET_CA_VARIATION_COPY = 'Ultrasonic clean and adjust'
 const CLARINET_CA_OPS_COPY = [
-    'Disassembled',
-    'Cleaned',
-    'Bore oiled (wood only)',
-    'Pads replaced as needed',
-    'Reassembled',
-    'Key work oiled and adjusted',
+    disassembled,
+    cleaned,
+    bore_oiled,
+    some_pads_replaced,
+    reassembled,
+    keywork_oiled,
 ]
 const CLARINET_CA_VAROPS_COPY = [
     'Clarinet (plastic only) and keys are ultrasonically cleaned'
@@ -49,13 +50,13 @@ const clarinetCleanAndAdjustDescriptionRaw = {
 
 // Oil and adjust
 const CLARINET_OA_TITLE_COPY = 'Clarinet Oil and Full Adjust'
-const CLARINET_OA_DESC_COPY = 'A more detailed full adjustment where extra attention is given to the keywork.'
+const CLARINET_OA_DESC_COPY = oil_and_adjust
 const CLARINET_OA_OPS_COPY = [
-    'Disassembled',
-    'Bore oiled (wood only)',
-    'Pads replaced as needed',
-    'Reassembled',
-    'Key work oiled and adjusted',
+    disassembled,
+    bore_oiled,
+    some_pads_replaced,
+    reassembled,
+    keywork_oiled,
 ]
 const clarinetOilAndAdjustDescriptionRaw = {
     title: CLARINET_OA_TITLE_COPY,
@@ -68,13 +69,13 @@ const CLARINET_FA_TITLE_COPY = 'Clarinet Full Adjustment/Play Condition'
 const CLARINET_FA_DESC_COPY = 'Your basic yearly clarinet \'tune-up\', get this done regularly to ensure your clarinet is playing its best!'
 const CLARINET_FA_VARIATION_COPY = 'Minor adjustment'
 const CLARINET_FA_OPS_COPY = [
-    'inspected',
-    'Pads replaced as needed',
-    'Key work oiled and adjusted',
+    inspected,
+    some_pads_replaced,
+    keywork_oiled,
 ]
 const CLARINET_FA_VAROPS_COPY = [
-    'inspected',
-    'Key work oiled and adjusted',
+    inspected,
+    keywork_oiled,
 ]
 const clarinetFullAdjustDescriptionRaw = {
     title: CLARINET_FA_TITLE_COPY,
@@ -98,11 +99,3 @@ export const clarinetServices = [
     { name: 'Tenon cork replacement', desc: null},
     { name: 'Neck cleaning and minor dent repair', desc: null},
 ]
-// const clarinetServices = [
-//     { name: 'Repad', desc: ''},
-//     { name: 'Oil and adjust', desc: ''},
-//     { name: 'Clean and adjust', desc: ''},
-//     { name: 'Ultrasonic clean and adjust (plastic only)', desc: ''},
-    // { name: 'Tenon cork replacement', desc: null},
-    // { name: 'Neck cleaning and minor dent repair', desc: null},
-// ]

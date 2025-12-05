@@ -1,21 +1,22 @@
 import { handleDescription, handleList, handleVariation, parseRaw } from "./utils.js"
+import { disassembled, reassembled, all_pads_replaced, some_pads_replaced, case_cleaned, keywork_oiled, step_ups_available, bore_oiled, inspected, cleaned, bocal_ultrasonic, boot_gasket, ultrasonic, clean_and_adjust, repad, oil_and_adjust, headcork, no_hand_made } from "./copy_data.js"
 
 // REPAD
 const FLUTE_REPAD_TITLE_COPY = 'Flute Repad'
-const FLUTE_REPAD_DESC_COPY = 'Full service, good for flutes found in attics/basements, hand-me-downs that need new life, moving to a new type of pad, or fixing water/mold damage.'
+const FLUTE_REPAD_DESC_COPY = repad
 const FLUTE_REPAD_VARIATION_COPY = 'Custom pads'
 const FLUTE_REPAD_OPS_COPY = [
-    'Disassembled',
-    'Ultrasonically cleaned (unless you opt out)',
-    'Headcork replaced',
-    'All pads replaced',
-    'Reassembled',
-    'Key work oiled and adjusted',
-    'case cleaned'
+    disassembled,
+    ultrasonic,
+    headcork,
+    all_pads_replaced,
+    reassembled,
+    keywork_oiled,
+    case_cleaned
 ]
 const FLUTE_REPAD_VAROPS_COPY = [
-    'Several step up and professional pad options available',
-    'Note: I do not currently offer hand-made flute repads with ultra high end pads like Straubinger'
+    step_ups_available,
+    no_hand_made,
 ]
 const fluteRepadDescriptionRaw = {
     title: FLUTE_REPAD_TITLE_COPY,
@@ -27,15 +28,15 @@ const fluteRepadDescriptionRaw = {
 
 // Clean and adjust
 const FLUTE_CA_TITLE_COPY = 'Flute Clean and Full Adjust'
-const FLUTE_CA_DESC_COPY = 'Full service with only needed pads replaced. Good for grimy and gunky instruments or making sure your flute looks its best for a show!'
+const FLUTE_CA_DESC_COPY = clean_and_adjust
 const FLUTE_CA_VARIATION_COPY = 'Ultrasonic clean and adjust'
 const FLUTE_CA_OPS_COPY = [
-    'Disassembled',
-    'Cleaned',
-    'Headcork replaced',
-    'Pads replaced as needed',
-    'Reassembled',
-    'Key work oiled and adjusted',
+    disassembled,
+    cleaned,
+    headcork,
+    some_pads_replaced,
+    reassembled,
+    keywork_oiled,
 ]
 const FLUTE_CA_VAROPS_COPY = [
     'Flute and keys are ultrasonically cleaned'
@@ -50,12 +51,12 @@ const fluteCleanAndAdjustDescriptionRaw = {
 
 // Oil and adjust
 const FLUTE_OA_TITLE_COPY = 'Flute Oil and Full Adjust'
-const FLUTE_OA_DESC_COPY = 'A more detailed full adjustment where extra attention is given to the keywork.'
+const FLUTE_OA_DESC_COPY = oil_and_adjust
 const FLUTE_OA_OPS_COPY = [
-    'Disassembled',
-    'Pads replaced as needed',
-    'Reassembled',
-    'Key work oiled and adjusted',
+    disassembled,
+    some_pads_replaced,
+    reassembled,
+    keywork_oiled,
 ]
 const fluteOilAndAdjustDescriptionRaw = {
     title: FLUTE_OA_TITLE_COPY,
@@ -68,13 +69,13 @@ const FLUTE_FA_TITLE_COPY = 'Flute Full Adjustment/Play Condition'
 const FLUTE_FA_DESC_COPY = 'Your basic regular flute \'tune-up\', get this done yearly to ensure you\'re flute is playing its best!'
 const FLUTE_FA_VARIATION_COPY = 'Minor adjustment'
 const FLUTE_FA_OPS_COPY = [
-    'inspected',
-    'Pads replaced as needed',
-    'Key work oiled and adjusted',
+    inspected,
+    some_pads_replaced,
+    keywork_oiled,
 ]
 const FLUTE_FA_VAROPS_COPY = [
-    'inspected',
-    'Key work oiled and adjusted',
+    inspected,
+    keywork_oiled,
 ]
 const fluteFullAdjustDescriptionRaw = {
     title: FLUTE_FA_TITLE_COPY,
