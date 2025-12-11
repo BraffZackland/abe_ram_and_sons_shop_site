@@ -2,7 +2,7 @@ export const repairBioCopy = "Chris studied under Rod Siljenberg and graduated w
 
 export const musicBioCopy = "Chris attended The Florida State University and studied classical saxophone with Pat Meighan, and Jon Bergeron (now at Northern Arizona University). He then joined the navy as a woodwind instrumentalist (clarinet and saxophone) where he was stationed in Naples, Italy with the 6th fleet band (now the Naval Forces Europe band), and while in Naples he also had the honor of occasionally playing with the NATO band. After a brief hiatus from instrumental music and a move to Brooklyn, now Chris is overjoyed to play with/have played with several local New York community ensembles such as the Brooklyn Symphony Orchestra, Brooklyn Wind Symphony, Jackson Heights Orchestra, Manhattan Wind Ensemble, and the Press Start Orchestra (just to name a few!)"
 
-export const tagLineCopy = 'The rehearsal time, <i>anti</i>-squeezing, <i>anti</i>-squeaking, <i>anti</i>-stand-partner-side-eye so you can play your best repair service.'
+export const tagLineCopy = 'The rehearsal time, <i>anti-squeezing</i>, <i>anti-squeaking</i>, <i>anti-stand-partner-side-eye</i> so you can play your best repair service.'
 
 export const disassembled = 'Disassembled'
 export const reassembled = 'Reassembled'
