@@ -4,8 +4,13 @@ import { oboeServices } from "./instrument_data/oboe_data.js"
 import { bassoonServices } from "./instrument_data/bassoon_data.js"
 import { clarinetServices } from "./instrument_data/clarinet_data.js"
 import { otherServices } from "./instrument_data/other_data.js"
-import { threeDServices } from "./instrument_data/threeD_data.js"
+// import { threeDServicesServices } from "./instrument_data/threeDServices_data.js"
 import { repairBioCopy, musicBioCopy, tagLineCopy } from "./instrument_data/copy_data.js"
+import { saxServices } from "./instrument_data/sax_data.js"
+import { brassServices } from "./instrument_data/brass_data.js"
+// import { threeDPrintingServices } from "./instrument_data/threeDPrinting_data.js"
+// import { accessoriesServices } from "./instrument_data/accessories_data.js"
+// import { rentalServices } from "./instrument_data/rental_data.js"
 
 const repairBio = document.getElementById('repair-bio')
 const musicBio = document.getElementById('music-bio')
@@ -15,6 +20,8 @@ const fluteServc = document.getElementById('fluteServc')
 const oboeServc = document.getElementById('oboeServc')
 const bassoonServc = document.getElementById('bassoonServc')
 const clarinetServc = document.getElementById('clarinetServc')
+const saxServc = document.getElementById('saxServc')
+const brassServc = document.getElementById('brassServc')
 const otherServc = document.getElementById('otherServc')
 const threeD = document.getElementById('threeD')
 
@@ -26,8 +33,13 @@ fluteServc.innerHTML = helper(fluteServices)
 oboeServc.innerHTML = helper(oboeServices)
 bassoonServc.innerHTML = helper(bassoonServices)
 clarinetServc.innerHTML = helper(clarinetServices)
+saxServc.innerHTML = helper(saxServices)
+brassServc.innerHTML = helper(brassServices)
 otherServc.innerHTML = helper(otherServices)
-threeD.innerHTML = helper(threeDServices)
+// threeD.innerHTML = helper(threeDServicesServices)
+// threeDPrintsServc.innerHTML = helper(threeDPrintingServices)
+// accessoriesServc.innerHTML = helper(accessoriesServices)
+// rentalServc.innerHTML = helper(rentalServices)
 
 if (document.getElementById('descModal')) {
   descModal.addEventListener('show.bs.modal', event => {
