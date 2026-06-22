@@ -11,6 +11,7 @@ import { brassServices } from "./instrument_data/brass_data.js"
 // import { threeDPrintingServices } from "./instrument_data/threeDPrinting_data.js"
 // import { accessoriesServices } from "./instrument_data/accessories_data.js"
 // import { rentalServices } from "./instrument_data/rental_data.js"
+import { CONSULTATION_FORM, FABRICATION_FORM, REPAIR_ESTIMATE_FORM, SHOPIFY_STORE, RENTAL_FORM} from './constants.js'
 
 const repairBio = document.getElementById('repair-bio')
 const musicBio = document.getElementById('music-bio')
@@ -24,6 +25,18 @@ const saxServc = document.getElementById('saxServc')
 const brassServc = document.getElementById('brassServc')
 const otherServc = document.getElementById('otherServc')
 const threeD = document.getElementById('threeD')
+
+const formConsult = document.getElementById('consultFormURL')
+const formFab = document.getElementById('fabFormURL')
+const formRepairEst = document.getElementById('repairEstFormURL')
+const formRepairEstFloat = document.getElementById('repairEstFormURLFloat')
+const linkShopify = document.getElementById('shopify')
+// const formRental = document.getElementById('consultFormURL')
+formConsult.href = CONSULTATION_FORM
+formFab.href = FABRICATION_FORM
+formRepairEst.href = REPAIR_ESTIMATE_FORM
+formRepairEstFloat.href = REPAIR_ESTIMATE_FORM
+linkShopify.href = SHOPIFY_STORE
 
 repairBio.textContent = repairBioCopy
 musicBio.textContent = musicBioCopy
@@ -52,5 +65,15 @@ if (document.getElementById('descModal')) {
     const modalTitle = descModal.querySelector('.modal-title')
     modalBodyInput.innerHTML = `${desc}${variation}${varOps}`
     modalTitle.innerHTML = title
+  })
+}
+
+const dogsToggle = document.querySelector('.dogs-toggle')
+const dogsCollapse = document.getElementById('dogsCollapse')
+
+if (dogsToggle && dogsCollapse) {
+  dogsToggle.addEventListener('click', () => {
+    const isOpen = dogsCollapse.classList.toggle('is-open')
+    dogsToggle.setAttribute('aria-expanded', isOpen)
   })
 }

@@ -24,15 +24,21 @@
   <script type="module" src="./scripts.js" ></script>
 </head>
 <body>
-  <a class="floating-button" href="https://forms.gle/tznFYPsj7xtEAR3T9" target="_blank"
+  <a class="floating-button" id="repairEstFormURLFloat" target="_blank"
     rel="noopener noreferrer">Request a quote</a>
   <header>
     <div class="logo-container">
       <p class="logo">Abe, Ram, & Son's</p>
       <p class="sub-logo">Musical Instrument Service</p>
     </div>
-    <a href="https://forms.gle/tznFYPsj7xtEAR3T9" class="contact-cta" target="_blank" rel="noopener noreferrer">Contact
-      Me</a>
+    <div class="header-right">
+      <nav class="site-nav">
+        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#fabricationModal">Fabrication</a>
+        <!-- <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#rentalModal">Rentals & Sales</a> -->
+        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#consultingModal">Consulting</a>
+      </nav>
+      <a class="contact-cta" id="repairEstFormURL" target="_blank" rel="noopener noreferrer">Contact Me</a>
+    </div>
   </header>
   <div class="banner"></div>
   <section class="business-details">
@@ -115,6 +121,42 @@
       </div>
     </div>
   </section>
+
+  <!-- Dogs of Abe, Ram, & Son's -->
+  <section class="dogs-section">
+    <button class="dogs-toggle" aria-expanded="false" aria-controls="dogsCollapse">
+      <span>Dogs of Abe, Ram, &amp; Son's</span>
+      <svg class="dogs-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+    <div class="dogs-collapse" id="dogsCollapse">
+      <div class="dogs-grid">
+        <div class="dog-card">
+          <h3 class="dog-name">Reggie</h3>
+          <div class="dog-photo">
+            <img src="./assets/Reggie_shop.jpg" alt="Reggie">
+          </div>
+          <p>Reggie is a Havanese and he loves his emotional support skunk and snuggles</p>
+        </div>
+        <div class="dog-card">
+          <h3 class="dog-name">Ray</h3>
+          <div class="dog-photo">
+            <img src="./assets/Ray_shop.jpg" alt="Ray">
+          </div>
+          <p>Ray is Reggie's younger brother, he loves to fetch, and he WILL eat your food if you don't keep an eye on it.</p>
+        </div>
+        <div class="dog-card">
+          <h3 class="dog-name">Lyra</h3>
+          <div class="dog-photo">
+            <img src="./assets/Lyra_shop.jpg" alt="Lyra">
+          </div>
+          <p>Lyra is a spicy spicy corgi, and she'll play all day if you're up for it!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <p class="business-info">
       Abe, Ram, & Son's Musical Instrument Service<br />
@@ -126,6 +168,131 @@
       </a>
     </div>
   </footer>
+  <!-- Fabrication Modal -->
+  <div class="modal fade" id="fabricationModal" tabindex="-1" aria-labelledby="fabricationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-4" id="fabricationModalLabel">Fabrication Services</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fabrication-body">
+          <div class="modal-section">
+            <h3 class="modal-section-title">3D Printed Accessories and repair tools</h3>
+            <p>Abe, Ram, & Son's offers custom-fabricated accessories, tools, and parts for most musical instruments, designed and printed in-house. Whether you need a replacement component, a hard-to-find part, or something purpose-built for your instrument, we can help.</p>
+            <p>Using professional-grade 3D printing with carefully selected materials, each part is produced with the tolerances and durability that instrument work demands.</p>
+          </div>
+          <div class="modal-section">
+            <h3 class="modal-section-title">A selection of what we can make</h3>
+            <ul class="modal-list">
+              <li>Replacement caps, rings, and guards</li>
+              <li>Custom reed cases</li>
+              <li>Instrument stands and storage components</li>
+              <li>Specialty parts and custom requests</li>
+            </ul>
+          </div>
+          <div class="modal-section">
+            <h3 class="modal-section-title">Ready-made items</h3>
+            <p>Browse available printed accessories in our online store. Items ship directly to you.</p>
+            <a id="shopify" class="modal-cta-btn" target="_blank" rel="noopener noreferrer">Visit the Shop</a>
+          </div>
+          <div class="modal-section">
+            <h3 class="modal-section-title">Custom fabrication request</h3>
+            <p>Have something specific in mind? Need to build a prototype? Fill out the form below and we'll get back to you with a quote and timeline.</p>
+            <a id="fabFormURL" class="modal-cta-btn modal-cta-btn--secondary" target="_blank" rel="noopener noreferrer">Submit a Fabrication Request</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rental & Sales Modal -->
+  <!-- <div class="modal fade" id="rentalModal" tabindex="-1" aria-labelledby="rentalModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-4" id="rentalModalLabel">Instrument Rentals & Sales</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fabrication-body">
+          <div class="modal-section">
+            <h3 class="modal-section-title">Rent a professional instrument</h3>
+            <p>Need access to a professional-level instrument without the upfront cost of buying? Abe, Ram, & Son's offers short- and long-term rentals on a curated selection of woodwinds, with a focus on instruments that are difficult to source elsewhere — including contrabassoon.</p>
+            <p>Every rental instrument is fully serviced and ready to play before it ships or is picked up.</p>
+          </div>
+          <div class="modal-section">
+            <h3 class="modal-section-title">What's available</h3>
+            <ul class="modal-list">
+              <li>Contrabassoon — professional models available for short-term and extended rental</li>
+              <li>Bassoon — student and intermediate models</li>
+              <li>Oboe and English Horn</li>
+              <li>Specialty and doubled woodwinds for pit and studio work</li>
+            </ul>
+            <p class="modal-note">Availability varies. Submit a request to confirm current inventory and pricing.</p>
+          </div>
+          <div class="modal-section">
+            <h3 class="modal-section-title">Rental terms</h3>
+            <ul class="modal-list">
+              <li>Monthly rates with flexible duration</li>
+              <li>Deposit required; applied toward purchase if you decide to buy</li>
+              <li>Rent-to-own available on select instruments</li>
+              <li>All rentals include one complimentary service check at return</li>
+            </ul>
+          </div>
+          <div class="modal-section">
+            <h3 class="modal-section-title">Instrument sales</h3>
+            <p>Refurbished and pre-owned instruments are available for purchase on a rotating basis. Each instrument is fully overhauled in-shop before sale. Contact us to ask about current inventory.</p>
+          </div>
+          <div class="modal-section">
+            <h3 class="modal-section-title">Ready to rent or buy?</h3>
+            <a href="https://forms.gle/tznFYPsj7xtEAR3T9" id="" class="modal-cta-btn" target="_blank" rel="noopener noreferrer">Submit a Rental Request</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Consulting Modal -->
+  <div class="modal fade" id="consultingModal" tabindex="-1" aria-labelledby="consultingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-4" id="consultingModalLabel">Consulting</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fabrication-body">
+          <!-- <div class="modal-section">
+            <h3 class="modal-section-title">Repair Lessons</h3>
+            <p>Learn instrument repair from a working technician. Sessions are hands-on and tailored to your level — whether you're a student looking to maintain your own instrument, a teacher who wants to handle minor repairs in-house, or someone considering repair as a trade.</p>
+            <p>Lessons cover proper technique, tool use, and the diagnostic thinking that separates a competent repair from a correct one. Double reed and woodwind specialty work is a particular focus, including the finer points of bassoon and contrabassoon mechanics that most general repair programs don't cover.</p>
+            <ul class="modal-list">
+              <li>One-on-one sessions, in-shop or remote</li>
+              <li>Single sessions or structured multi-session progressions</li>
+              <li>Topics range from pad replacement and regulation to full overhauls</li>
+              <li>Curriculum can be built around your instrument or your goals</li>
+            </ul>
+          </div> -->
+          <div class="modal-section">
+            <h3 class="modal-section-title">Instrument Appraisal & Inspection</h3>
+            <p>Buying, selling, insuring, or just curious what you have? A professional inspection gives you an accurate picture of an instrument's condition and value — before money changes hands or a claim gets filed.</p>
+            <ul class="modal-list">
+              <li>Pre-purchase inspection — know what you're buying and what it will cost to bring to playing condition</li>
+              <li>Estate and collection appraisal — written valuation for insurance, sale, or probate</li>
+              <li>Condition reports for buyers, sellers, and auction consignments</li>
+              <li>Specialty focus on woodwinds, double reeds, and vintage instruments</li>
+            </ul>
+            <p class="modal-note">Remote inspection available for instruments that can be shipped. Written reports provided for all formal appraisals.</p>
+          </div>
+          <div class="modal-section">
+            <h3 class="modal-section-title">Get in touch</h3>
+            <p>Consulting services are booked by inquiry. Reach out with a description of what you're looking for and we'll work out the right format and rate.</p>
+            <a class="modal-cta-btn" id="consultFormURL" target="_blank" rel="noopener noreferrer">Submit a Consulting Inquiry</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="modal fade" id="descModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">

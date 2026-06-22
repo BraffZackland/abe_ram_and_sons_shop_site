@@ -1,0 +1,5 @@
+export const CONSULTATION_FORM = "https://forms.gle/K27nMQXsq28V9Y7a7"
+export const FABRICATION_FORM = "https://forms.gle/qGaM2dDvCbiSDJ577"
+export const REPAIR_ESTIMATE_FORM = "https://forms.gle/n3oMeNtQDvTh7cGeA"
+export const RENTAL_FORM = ""
+export const SHOPIFY_STORE = "https://abe-ram-and-son-s-instrument-service.myshopify.com/"
